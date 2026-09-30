@@ -1,0 +1,16 @@
+{
+  "name": "Frazier Plumbing Service of Atlanta",
+  "short_name": "Frazier Plumbing",
+  "description": "Licensed 24/7 master plumber in Atlanta, GA. Emergency repairs, water heater installation, burst pipes, and drain hydro-jetting at 1000 Moreland Ave SE.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#141414",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

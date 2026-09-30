@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Newsreader', 'Instrument Serif', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  html, body {
+    font-family: var(--font-sans);
+    scrollbar-color: #FACC15 #181818 !important;
+    scrollbar-width: thin !important;
+  }
+
+  * {
+    scrollbar-color: #FACC15 #181818;
+  }
+}
+
+/* Lenis Recommended Smooth Scroll CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.font-serif {
+  font-family: 'Newsreader', 'Instrument Serif', Georgia, serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom architectural stepped tab notch */
+.architectural-notch-top {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 150px) 0,
+    calc(100% - 110px) 36px,
+    100% 36px,
+    100% 100%,
+    0 100%
+  );
+}
+
+.architectural-notch-bottom {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 36px),
+    calc(100% - 110px) calc(100% - 36px),
+    calc(100% - 150px) 100%,
+    0 100%
+  );
+}
+
+/* ULTRA-VIVID HIGH-CONTRAST YELLOW SCROLLBAR (ALWAYS VISIBLE AT ALL TIMES) */
+::-webkit-scrollbar {
+  width: 14px !important;
+  height: 14px !important;
+  display: block !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111 !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FACC15 !important; /* Bright Canary Yellow */
+  background: #FACC15 !important;
+  border-radius: 8px !important;
+  border: 3px solid #111111 !important;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.5) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FDE047 !important;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #EAB308 !important;
+}
